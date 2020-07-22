@@ -1,0 +1,24 @@
+#Assignment1 --> sum of n numbers with help while loop
+
+num = int(input("enter the value of n to find the sum : "))
+given = num
+sum = 0
+if num <= 0:
+    print("Enter a Positive Number ")
+else:
+    while num > 0:
+        sum += num
+        num -= 1;
+    print("sum of first", given,"natural numbers is:",sum)
+    
+    
+#Assignment2 --> take a integer and find -> prime or not
+num1 = int(input("Enter a number : "))
+if num1 <= 1:
+    print(num1, "is not a prime number")
+else:
+    for i in range(2,num1):
+        if(num1%i) == 0:
+            print(num1, "is not a prime number")
+    else:
+        print(num1, "is a prime number")
